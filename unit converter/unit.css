@@ -1,0 +1,128 @@
+body {
+    padding-top: 20px;
+    background-color: #202020;
+    background: url(wheel.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+h1 {
+        color: #c5c5c5;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing:00;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+     }
+
+
+.converter-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);    
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+}
+
+.converter-wrapper input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.converter-wrapper span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.converter-wrapper span select {
+    background-color: #140314;
+    color: #958d8d;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    
+    /* hide default arrow in chrome OSX */
+}
+
+.converter-wrapper span::before,
+.converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.converter-wrapper span::after {
+    /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+}
+
+.converter-wrapper span::before {
+    /*  Custom dropdown arrow cover */
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: #503350;
+}
+
+.converter-side-a,
+.converter-side-b {
+    float: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: #110606;
+    font-size: 2.4em;
+    line-height: 0;
+    text-align: center;
+}
+
+.converter-side-a {
+    padding-right: 10px;
+}
+
+.converter-side-b {
+    padding-left: 10px;
+}
+
