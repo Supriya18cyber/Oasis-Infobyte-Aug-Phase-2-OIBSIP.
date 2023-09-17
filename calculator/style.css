@@ -1,0 +1,108 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg,#7a648b, #acbc99, #bbc2bd);
+    display: flex;
+    font-family: 'Dosis',sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(20, 14, 14, 0.3);
+    border: 1px solid rgba(12, 3, 3, 0.34);
+    border-radius: 16px;
+    box-shadow: 1px 4px 30px rgba(255, 255, 255, 0) ;
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(239, 213, 213, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(146, 158, 110, 0);
+    color: #12020e;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.cal-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.cal-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #e1d7d7;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family:initial;
+    font-size: 24px;
+    height: 65px;
+}
+
+.cal-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #f0eaea;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(213, 183, 183, 0.1);
+    color: #130f13;
+    background: #c0cbca;
+}
+
+.cal-button:last-child:hover{
+    background-color: inherit;
+    color:inherit;
+}
+
+.cal-button:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.cal-button:active{
+    background-color: #bc9b9b;
+}
+
+.double{
+    flex-basis: 73%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
+
